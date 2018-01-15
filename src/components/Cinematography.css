@@ -1,0 +1,38 @@
+.video-player {
+  width: 100% !important;
+  height: 100vh !important;
+}
+
+#carouselExampleIndicators {
+  margin-top: -70px !important;
+  width: 100% !important;
+}
+
+.video-button {
+  width: 80px !important;
+  height: 80px !important;
+  position: absolute;
+  z-index: 10;
+  left: 48%;
+  top:45%;
+}
+.video-button:hover {
+  opacity: 0.8;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.cinematography-page h3 {
+  font-size: 15px;
+}
+.cinematography-page p {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.info-wrapper {
+  padding-top: 100px;
+  width: 70%;
+  margin: auto;
+}
