@@ -38,7 +38,7 @@
   
   .carousel {
     position: relative;
-    width: 60% !important;
+    width: 70% !important;
   margin: auto !important;
 margin-top : 20px !important; }
 
@@ -234,4 +234,34 @@ margin-top : 20px !important; }
         font-family: 'Gotham-book';
         font-size: 20px;
         letter-spacing: 2px;
+      }
+      .details-link {
+          margin-top: 30px;
+        text-align: center;
+        font-family: 'Gotham-book';
+        font-size: 15px;
+        letter-spacing: 2px;
+        color: black;
+      }
+      .flex-row {
+        display: flex;
+        flex-direction: row;
+      }
+      .gallery-page h3 {
+        font-size: 15px;
+      }
+      .gallery-page p {
+        margin-top: 20px;
+        text-align: left;
+      }
+      .info-wrapper {
+        padding-top: 100px;
+        width: 70%;
+        margin: auto;
+      }
+      .control-dots {
+          display: none;
+      }
+      .thumbs {
+          text-align: center;
       }
