@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import Ashura from '../img/gallery/ASHURA.jpg'
 import Canary from '../img/gallery/CANARY WHARF.jpg'
 import Rhein from '../img/gallery/RHEIN.jpg'
+import Autumn from '../img/gallery/AUTUMN LIGHT.jpg'
+import Disconnected from '../img/gallery/DISCONNECTED.jpg'
 import './Photography.css'
 
 class Photography extends Component {
@@ -28,8 +30,8 @@ class Photography extends Component {
 
       <div className="row text-center text-lg-center mb-1">
       <div className="col-md-4 col-xs-1">
-      <Link to='/gallery'>
-          <img className="img-fluid" src={Ashura} alt=""></img>
+      <Link to='/gallery/disconnected'>
+          <img className="img-fluid" src={Disconnected} alt=""></img>
           <div class="overlay">
           <h3 class="title">disconnected</h3>
           <p class="paragraph">Tarek Shayne Tabet</p>
@@ -38,18 +40,18 @@ class Photography extends Component {
           </div>
           <div className="col-md-4 col-xs-12">
           <a href="#" className="">
-          <img className="img-fluid" src={Canary} alt=""></img> 
+          <img className="img-fluid" src={Ashura} alt=""></img> 
           <div class="overlay">
-            <h3 class="title">disconnected</h3>
+            <h3 class="title">Ashura</h3>
             <p class="paragraph">Tarek Shayne Tabet</p>
             </div>            
           </a>
           </div>
           <div className="col-md-4 col-xs-12">
           <a href="#" className="">
-          <img className="img-fluid" src={Ashura} alt=""></img>
+          <img className="img-fluid" src={Rhein} alt=""></img>
           <div class="overlay">
-            <h3 class="title">disconnected</h3>
+            <h3 class="title">Rhein</h3>
             <p class="paragraph">Tarek Shayne Tabet</p>
             </div>              
           </a>
@@ -59,9 +61,9 @@ class Photography extends Component {
       <div className="row text-center text-lg-center mb-1">
       <div className="col-md-4 col-xs-1">
           <a href="#" className="">
-          <img className="img-fluid" src={Ashura} alt=""></img>
+          <img className="img-fluid" src={Autumn} alt=""></img>
           <div class="overlay">
-            <h3 class="title">disconnected</h3>
+            <h3 class="title">Autumn light</h3>
             <p class="paragraph">Tarek Shayne Tabet</p>
             </div>              
           </a>
@@ -70,50 +72,12 @@ class Photography extends Component {
           <a href="#" className="">
           <img className="img-fluid" src={Canary} alt=""></img>
           <div class="overlay">
-            <h3 class="title">disconnected</h3>
+            <h3 class="title">Canary wharf</h3>
             <p class="paragraph">Tarek Shayne Tabet</p>
             </div>              
           </a>
           </div>
-          <div className="col-md-4 col-xs-12">
-          <a href="#" className="">
-          <img className="img-fluid" src={Ashura} alt=""></img>
-          <div class="overlay">
-            <h3 class="title">disconnected</h3>
-            <p class="paragraph">Tarek Shayne Tabet</p>
-            </div>              
-          </a>
-          </div>
-        
-      </div>
-      <div className="row text-center text-lg-center mb-1">
-      <div className="col-md-4 col-xs-1">
-          <a href="#" className="">
-          <img className="img-fluid" src={Ashura} alt=""></img>
-          <div class="overlay">
-            <h3 class="title">disconnected</h3>
-            <p class="paragraph">Tarek Shayne Tabet</p>
-            </div>              
-          </a>
-          </div>
-          <div className="col-md-4 col-xs-12">
-          <a href="#" className="">
-          <img className="img-fluid" src={Canary} alt=""></img>
-          <div class="overlay">
-            <h3 class="title">disconnected</h3>
-            <p class="paragraph">Tarek Shayne Tabet</p>
-            </div>              
-          </a>
-          </div>
-          <div className="col-md-4 col-xs-12">
-          <a href="#" className="">
-          <img className="img-fluid" src={Ashura} alt=""></img>
-          <div class="overlay">
-            <h3 class="title">disconnected</h3>
-            <p class="paragraph">Tarek Shayne Tabet</p>
-            </div>              
-          </a>
-          </div>
+          
         
       </div>
    

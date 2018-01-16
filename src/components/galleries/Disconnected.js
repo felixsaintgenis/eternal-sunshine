@@ -4,10 +4,33 @@ import { Carousel } from 'react-responsive-carousel';
 import { HashLink as Link } from 'react-router-hash-link';
 import Header from '../Header-black'
 import Footer from '../Footer'
-import Ashura from '../../img/gallery/ASHURA.jpg'
-import "./gallery-1.css"
+import "./Disconnected.css"
 
 class PicCarousel extends Component {
+
+    state = { 
+        photos:[
+        {src: "../img/gallery/disconnected/disconnected1.jpg"},
+        {src: "../img/gallery/disconnected/disconnected2.jpg"},
+        {src: "../img/gallery/disconnected/disconnected3.jpg"},
+        {src: "../img/gallery/disconnected/disconnected4.jpg"},
+        {src: "../img/gallery/disconnected/disconnected5.jpg"},
+        {src: "../img/gallery/disconnected/disconnected6.jpg"},
+        {src: "../img/gallery/disconnected/disconnected7.jpg"},
+        {src: "../img/gallery/disconnected/disconnected8.jpg"},
+        {src: "../img/gallery/disconnected/disconnected9.jpg"},
+        {src: "../img/gallery/disconnected/disconnected10.jpg"},
+        {src: "../img/gallery/disconnected/disconnected11.jpg"},
+        {src: "../img/gallery/disconnected/disconnected12.jpg"},
+        {src: "../img/gallery/disconnected/disconnected13.jpg"},
+        {src: "../img/gallery/disconnected/disconnected14.jpg"},
+        {src: "../img/gallery/disconnected/disconnected15.jpg"},
+        {src: "../img/gallery/disconnected/disconnected16.jpg"},
+        {src: "../img/gallery/disconnected/disconnected17.jpg"},
+        {src: "../img/gallery/disconnected/disconnected18.jpg"}
+        
+      ]
+        }
 
     render() {
         return (
@@ -16,15 +39,15 @@ class PicCarousel extends Component {
             <h3 className="serie-name">Disconnected</h3>
             
             <Carousel>
-                <div>
-                    <img src={Ashura} />
-                </div>
-                <div>
-                    <img src={Ashura} />
-                </div>
-                <div>
-                    <img src={Ashura} />
-                </div>
+            
+                {this.state.photos.map((photo) => {
+                return (<div>
+                    <img src={photo.src} />
+                </div>)
+                })
+                }
+                
+               
             </Carousel>
             <Link to="#info-anchor"><h3 className="details-link">View Details</h3></Link>
             <div  id="info-anchor" className="info-wrapper">

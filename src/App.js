@@ -6,7 +6,7 @@ import Cinematography from './components/Cinematography';
 import Photography from './components/Photography';
 import About from './components/About';
 import Contact from './components/Contact';
-import Gallery from './components/galleries/gallery-1'
+import Disconnected from './components/galleries/Disconnected'
 
 const App = () => (
   <BrowserRouter>
@@ -17,7 +17,7 @@ const App = () => (
   <Route path='/photography' component={Photography} />
   <Route path='/about' component={About} />
   <Route path='/contact' component={Contact} />
-  <Route path='/gallery' component={Gallery} />
+  <Route path='/gallery/disconnected' component={Disconnected} />
   </div>
   </BrowserRouter>
 );

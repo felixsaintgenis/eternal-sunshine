@@ -12,19 +12,21 @@ class Cinematography extends Component {
       {cinematography: "TAREK SHAYNE TABET", director: "PATRICK JORDAN", music: "AMIN APPLESEED", editing: "IMRAN SHAYNE TABET", description:"description description description description descriptiondescription description description description descriptiondescription description description description descriptiondescription description description description descriptiondescription description description description descriptiondescription description description description description"},
       
     ],
-    value:0 }
+    value:0,
+    isPlaying:true }
 
     incrementValue = () => {
     
       if (this.state.value === this.state.videos.length -1 ) {
         this.setState({
-          value: 0
+          value: 0,
         })
+      
       }
         else {
       
       this.setState({
-        value: this.state.value + 1
+        value: this.state.value + 1,
       })
     }
   }
@@ -44,9 +46,6 @@ class Cinematography extends Component {
   }
 }
 
-    playVideo() {
-      this.refs.vidRef.play();
-    }
   
 
 
@@ -66,13 +65,13 @@ class Cinematography extends Component {
   <div className="carousel-inner" role="listbox">
 
     <div className="carousel-item active">
-    <ReactPlayer className="video-player" url='https://player.vimeo.com/video/152809507' />
+    <ReactPlayer className="video-player" url='https://player.vimeo.com/video/152809507'  />
     </div>
     <div className="carousel-item">
     <ReactPlayer className="video-player" url='https://player.vimeo.com/video/152809507' />
     </div>
     <div className="carousel-item">
-    <ReactPlayer className="video-player" url='https://player.vimeo.com/video/152809507' />
+    <ReactPlayer className="video-player" url='https://player.vimeo.com/video/152809507'  />
     </div>
   </div>
   <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" onClick={this.decrementValue}>
