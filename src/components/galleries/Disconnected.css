@@ -272,4 +272,7 @@ margin-top : 20px !important; }
     .portrait {
       width: 45% !important;
     }
-    
+    .details-scroll {
+      text-align: center;
+      
+    }
