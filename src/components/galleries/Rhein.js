@@ -6,7 +6,6 @@ import { ScrollTo } from "react-scroll-to";
 import Header from '../Header-black'
 import Footer from '../Footer'
 import "./Disconnected.css"
-
 class PicCarousel extends Component {
 
     state = { 
