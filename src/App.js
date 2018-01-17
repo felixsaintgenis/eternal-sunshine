@@ -7,6 +7,10 @@ import Photography from './components/Photography';
 import About from './components/About';
 import Contact from './components/Contact';
 import Disconnected from './components/galleries/Disconnected'
+import Ashura from './components/galleries/Ashura'
+import Rhein from './components/galleries/Rhein'
+import Canary from './components/galleries/Canary'
+import Autumn from './components/galleries/Autumn'
 
 const App = () => (
   <BrowserRouter>
@@ -18,6 +22,11 @@ const App = () => (
   <Route path='/about' component={About} />
   <Route path='/contact' component={Contact} />
   <Route path='/gallery/disconnected' component={Disconnected} />
+  <Route path='/gallery/ashura' component={Ashura} />
+  <Route path='/gallery/rhein' component={Rhein} />
+  <Route path='/gallery/canary-wharf' component={Canary} />
+  <Route path='/gallery/autumn' component={Autumn} />
+
   </div>
   </BrowserRouter>
 );

@@ -10,24 +10,15 @@ class PicCarousel extends Component {
 
     state = { 
         photos:[
-        {src: "../img/gallery/disconnected/disconnected1.jpg"},
-        {src: "../img/gallery/disconnected/disconnected2.jpg"},
-        {src: "../img/gallery/disconnected/disconnected3.jpg"},
-        {src: "../img/gallery/disconnected/disconnected4.jpg"},
-        {src: "../img/gallery/disconnected/disconnected5.jpg"},
-        {src: "../img/gallery/disconnected/disconnected6.jpg"},
-        {src: "../img/gallery/disconnected/disconnected7.jpg"},
-        {src: "../img/gallery/disconnected/disconnected8.jpg"},
-        {src: "../img/gallery/disconnected/disconnected9.jpg"},
-        {src: "../img/gallery/disconnected/disconnected10.jpg"},
-        {src: "../img/gallery/disconnected/disconnected11.jpg"},
-        {src: "../img/gallery/disconnected/disconnected12.jpg"},
-        {src: "../img/gallery/disconnected/disconnected13.jpg"},
-        {src: "../img/gallery/disconnected/disconnected14.jpg"},
-        {src: "../img/gallery/disconnected/disconnected15.jpg"},
-        {src: "../img/gallery/disconnected/disconnected16.jpg"},
-        {src: "../img/gallery/disconnected/disconnected17.jpg"},
-        {src: "../img/gallery/disconnected/disconnected18.jpg"}
+        {src: "../img/gallery/ashura/ashura1.jpg", class:''},
+        {src: "../img/gallery/ashura/ashura2.jpg", class:''},
+        {src: "../img/gallery/ashura/ashura4.jpg", class:''},
+        {src: "../img/gallery/ashura/ashura5.jpg", class:''},
+        {src: "../img/gallery/ashura/ashura6.jpg", class:''},
+        {src: "../img/gallery/ashura/ashura3.jpg", class:'portrait'},
+        {src: "../img/gallery/ashura/ashura7.jpg", class:'portrait'}
+     
+        
         
       ]
         }
@@ -36,13 +27,13 @@ class PicCarousel extends Component {
         return (
             <div className="gallery-page">
             <Header />
-            <h3 className="serie-name">Disconnected</h3>
+            <h3 className="serie-name">Ashura</h3>
             
             <Carousel>
             
                 {this.state.photos.map((photo) => {
                 return (<div>
-                    <img src={photo.src} axis="vertical" />
+                    <img src={photo.src} className={photo.class} />
                 </div>)
                 })
                 }

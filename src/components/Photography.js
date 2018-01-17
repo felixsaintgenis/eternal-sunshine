@@ -39,43 +39,43 @@ class Photography extends Component {
           </Link>
           </div>
           <div className="col-md-4 col-xs-12">
-          <a href="#" className="">
+          <Link to='/gallery/ashura'>
           <img className="img-fluid" src={Ashura} alt=""></img> 
           <div class="overlay">
             <h3 class="title">Ashura</h3>
             <p class="paragraph">Tarek Shayne Tabet</p>
             </div>            
-          </a>
+            </Link>
           </div>
           <div className="col-md-4 col-xs-12">
-          <a href="#" className="">
+          <Link to='/gallery/rhein'>
           <img className="img-fluid" src={Rhein} alt=""></img>
           <div class="overlay">
             <h3 class="title">Rhein</h3>
             <p class="paragraph">Tarek Shayne Tabet</p>
             </div>              
-          </a>
+            </Link>
           </div>
         
       </div>
       <div className="row text-center text-lg-center mb-1">
       <div className="col-md-4 col-xs-1">
-          <a href="#" className="">
+      <Link to='/gallery/autumn'>
           <img className="img-fluid" src={Autumn} alt=""></img>
           <div class="overlay">
             <h3 class="title">Autumn light</h3>
             <p class="paragraph">Tarek Shayne Tabet</p>
             </div>              
-          </a>
+            </Link>
           </div>
           <div className="col-md-4 col-xs-12">
-          <a href="#" className="">
+          <Link to='/gallery/canary-wharf'>
           <img className="img-fluid" src={Canary} alt=""></img>
           <div class="overlay">
             <h3 class="title">Canary wharf</h3>
             <p class="paragraph">Tarek Shayne Tabet</p>
             </div>              
-          </a>
+            </Link>
           </div>
           
         
