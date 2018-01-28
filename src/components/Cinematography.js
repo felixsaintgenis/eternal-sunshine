@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactPlayer from 'react-player'
+import { Carousel } from 'react-responsive-carousel';
 import Header from './Header'
 import Footer from './Footer'
 import './Cinematography.css'

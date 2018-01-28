@@ -36,3 +36,6 @@
   width: 70%;
   margin: auto;
 }
+.carousel-control-next {
+  width: 100px;
+}

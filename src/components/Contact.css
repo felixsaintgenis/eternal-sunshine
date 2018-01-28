@@ -10,3 +10,9 @@
     -o-background-size: cover;
     background-size: cover;
   }
+  .contact-text p {
+    color: white;
+    font-family: 'Gotham-book';
+    letter-spacing: 3px;
+    line-height: 30px;
+  }
