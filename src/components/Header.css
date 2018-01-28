@@ -43,12 +43,14 @@
     .nav-link {
       font-size: 8px !important;
       letter-spacing: 3px;
-      margin-left: -50px;
+      
       color: white !important;
+    }
+
+    .nav-item {
+      margin-top: 10px;
+      margin-left: -50px;
     }
     
   }
-  @media only screen and (max-width: 500px) {
-  
-    
-  }
+ 
