@@ -31,7 +31,7 @@ class PicCarousel extends Component {
             <Header />
             <h3 className="serie-name">Rhein</h3>
             
-            <Carousel width='70%' dynamicHeight={true}>
+            <Carousel width='70%' dynamicHeight={true} useKeyboardArrows={true}>
             
                 {this.state.photos.map((photo) => {
                 return (<div>

@@ -5,7 +5,6 @@ import Footer from './Footer'
 import { Link } from 'react-router-dom';
 import Ashura from '../img/gallery/ASHURA.jpg'
 import Canary from '../img/gallery/CANARY WHARF.jpg'
-import Rhein from '../img/gallery/RHEIN.jpg'
 import Autumn from '../img/gallery/AUTUMN LIGHT.jpg'
 import Disconnected from '../img/gallery/DISCONNECTED.jpg'
 import './Photography.css'
@@ -49,7 +48,7 @@ class Photography extends Component {
           </div>
           <div className="col-md-4 col-xs-12">
           <Link to='/gallery/rhein'>
-          <img className="img-fluid" src={Rhein} alt=""></img>
+          <img className="img-fluid" src='../img/gallery/RHIN.jpg' alt=""></img>
           <div class="overlay">
             <h3 class="title">Rhein</h3>
             <p class="paragraph">Tarek Shayne Tabet</p>
