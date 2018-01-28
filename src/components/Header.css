@@ -26,3 +26,29 @@
   .navbar-default .navbar-toggle .icon-bar {
     background-color: white !important;
   }
+
+  @media only screen and (max-width: 500px) {
+
+
+    .navbar-brand {
+      font-family: 'Gotham';
+      color: white !important;
+      font-size: 10px;
+      letter-spacing: 3px;
+      margin-left: -50px;
+      margin-top: 10px;
+      
+    }
+
+    .nav-link {
+      font-size: 8px !important;
+      letter-spacing: 3px;
+      margin-left: -50px;
+      color: white !important;
+    }
+    
+  }
+  @media only screen and (max-width: 500px) {
+  
+    
+  }

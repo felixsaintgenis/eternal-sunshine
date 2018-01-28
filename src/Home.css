@@ -112,18 +112,23 @@ body {
       letter-spacing: 6px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
 
   .full-homepage-background h1 {
     padding-top: 50px;
     font-family: 'Gotham';
-    font-size: 10px;
-    letter-spacing: 5px;
+    font-size: 12px;
+    letter-spacing: 4px;
   }
   
   .navigation-list a {
     
-      font-size: 6px;
+      font-size: 8px;
       letter-spacing: 4px;
+
+  
+  }
+  .vertical-center   {
+    min-height: 80vh;
   }
 }
