@@ -39,7 +39,7 @@ class PicCarousel extends Component {
             <Header />
             <h3 className="serie-name">Disconnected</h3>
             
-            <Carousel width='130vh' height='70vh' dynamicHeight={true} useKeyboardArrows={true}>
+            <Carousel width='70%' dynamicHeight={true} useKeyboardArrows={true}>
             
                 {this.state.photos.map((photo) => {
                 return (<div>
@@ -61,19 +61,14 @@ class PicCarousel extends Component {
             </ScrollTo>
             <div  id="info-anchor" className="info-wrapper">
     <div className="flex-row">
-    <h3><strong>CINEMATOGRAPHY - </strong> </h3><h3>TAREK SHAYNE TABET</h3>
+    <h3><strong>Exibited in: </strong></h3>
     </div>
+    <p>Wiesbadener Fototage 2017 - August 2017</p>
+    <p>Kunst & Kultur Stiftung Düssledorf - March to May 2018</p>
+  
     <div className="flex-row">
-    <h3><strong>DIRECTOR - </strong></h3><h3>TAREK SHAYNE TABET</h3>
-    </div>
-    <div className="flex-row">
-    <h3><strong>MUSIC - </strong></h3><h3>TAREK SHAYNE TABET</h3>
-    </div>
-    <div className="flex-row">
-    <h3><strong>EDITING - </strong></h3><h3>TAREK SHAYNE TABET</h3>
-    </div>
-    <div className="flex-row">
-    <p>description description description description descriptiondescription description description description descriptiondescription description description description descriptiondescription description description description descriptiondescription description description description descriptiondescription description description description description descriptiondescription description description description description description description description</p>
+    <p>Disconnected is born out of a near depression I experienced whilst living in London. The series is about me processing the idea of isolation into imagery. Isolation in a metropolis is directly related to the development of technology, replacing human interaction. Falling in love with a person through a screen is more convenient than going through the nerve-wracking process of meeting someone in real life.
+</p>
     </div>
     </div>
     <Footer />

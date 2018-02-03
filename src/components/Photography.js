@@ -7,6 +7,7 @@ import Ashura from '../img/gallery/ASHURA.jpg'
 import Canary from '../img/gallery/CANARY WHARF.jpg'
 import Autumn from '../img/gallery/AUTUMN LIGHT.jpg'
 import Disconnected from '../img/gallery/DISCONNECTED.jpg'
+
 import './Photography.css'
 
 class Photography extends Component {
@@ -72,6 +73,15 @@ class Photography extends Component {
           <img className="img-fluid" src={Canary} alt=""></img>
           <div class="overlay">
             <h3 class="title">Canary wharf</h3>
+            <p class="paragraph">Tarek Shayne Tabet</p>
+            </div>              
+            </Link>
+          </div>
+          <div className="col-md-4 col-xs-12">
+          <Link to='/gallery/jaded'>
+          <img className="img-fluid" src='../img/gallery/JADED.jpg' alt=""></img>
+          <div class="overlay">
+            <h3 class="title">Jaded</h3>
             <p class="paragraph">Tarek Shayne Tabet</p>
             </div>              
             </Link>

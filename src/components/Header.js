@@ -15,16 +15,16 @@ const Header = () => {
   <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
     <ul className="navbar-nav">
     <li className="nav-item">
-    <Link className="nav-link mobile-res-link" to='/photography'>PHOTOGRAPHY</Link>
+    <Link className="nav-link" to='/photography'>PHOTOGRAPHY</Link>
   </li>
       <li className="nav-item active">
-      <Link className="nav-link mobile-res-link" to='/cinematography'>CINEMATOGRAPHY</Link>
+      <Link className="nav-link" to='/cinematography'>CINEMATOGRAPHY</Link>
     </li>
       <li className="nav-item">
-      <Link className="nav-link mobile-res-link" to='/about'>ABOUT</Link>
+      <Link className="nav-link" to='/about'>ABOUT</Link>
       </li>
       <li className="nav-item">
-      <Link className="nav-link mobile-res-link" to='/contact'>CONTACT</Link>
+      <Link className="nav-link" to='/contact'>CONTACT</Link>
       </li>
     </ul>
   </div>

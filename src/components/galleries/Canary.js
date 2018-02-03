@@ -55,20 +55,10 @@ class PicCarousel extends Component {
                 }
             </ScrollTo>
             <div  id="info-anchor" className="info-wrapper">
+    
     <div className="flex-row">
-    <h3><strong>CINEMATOGRAPHY - </strong> </h3><h3>TAREK SHAYNE TABET</h3>
-    </div>
-    <div className="flex-row">
-    <h3><strong>DIRECTOR - </strong></h3><h3>TAREK SHAYNE TABET</h3>
-    </div>
-    <div className="flex-row">
-    <h3><strong>MUSIC - </strong></h3><h3>TAREK SHAYNE TABET</h3>
-    </div>
-    <div className="flex-row">
-    <h3><strong>EDITING - </strong></h3><h3>TAREK SHAYNE TABET</h3>
-    </div>
-    <div className="flex-row">
-    <p>description description description description descriptiondescription description description description descriptiondescription description description description descriptiondescription description description description descriptiondescription description description description descriptiondescription description description description description descriptiondescription description description description description description description description</p>
+    <p>Canary Wharf is like a dystopian dream to me. An autonomous district in London, I felt compelled in returning day by day and photographing this concrete maze. I shot most of the series either early in the morning or late in the evening, when only a few lost souls would be ghosting around the gigantic estate – going in and out of shadows.  
+</p>
     </div>
     </div>
     <Footer />

@@ -52,20 +52,10 @@ class PicCarousel extends Component {
                 }
             </ScrollTo>
             <div  id="info-anchor" className="info-wrapper">
+    
     <div className="flex-row">
-    <h3><strong>CINEMATOGRAPHY - </strong> </h3><h3>TAREK SHAYNE TABET</h3>
-    </div>
-    <div className="flex-row">
-    <h3><strong>DIRECTOR - </strong></h3><h3>TAREK SHAYNE TABET</h3>
-    </div>
-    <div className="flex-row">
-    <h3><strong>MUSIC - </strong></h3><h3>TAREK SHAYNE TABET</h3>
-    </div>
-    <div className="flex-row">
-    <h3><strong>EDITING - </strong></h3><h3>TAREK SHAYNE TABET</h3>
-    </div>
-    <div className="flex-row">
-    <p>description description description description descriptiondescription description description description descriptiondescription description description description descriptiondescription description description description descriptiondescription description description description descriptiondescription description description description description descriptiondescription description description description description description description description</p>
+    <p>The Rhine is probably the most important landmark of Düsseldorf, the city I spent the larger part of my life in. Every visit to the Rhine brings a new perspective. In the winter the light is low and the river has an air of mystery about it and in the summer the reflection of the sun is almost blinding. The Rhine series is always changing, just like the River itself. 
+</p>
     </div>
     </div>
     <Footer />

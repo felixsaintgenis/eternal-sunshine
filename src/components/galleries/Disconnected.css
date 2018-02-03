@@ -38,7 +38,8 @@
   
   .carousel {
     position: relative;
-    width: 100vh;
+    width: 1200px !important;
+    max-width: 100%;
     height: auto;
   margin: auto !important;
 margin-top : -10px !important; }
@@ -54,9 +55,9 @@ margin-top : -10px !important; }
       border: 0;
       background: none; }
     .carousel img {
-      width: 100vh;
-   max-width: 100%;
-   height: auto;
+      width: 1200px;
+      max-width: 100%;
+      height: auto;
 
       display: inline-block;
       pointer-events: none; }
@@ -233,7 +234,7 @@ margin-top : -10px !important; }
       opacity: 1; }
 
       .serie-name {
-        margin-top: 40px;
+        margin-top: 20px;
         margin-bottom: 20px;
         text-align: center;
         font-family: 'Gotham-book';
@@ -242,7 +243,7 @@ margin-top : -10px !important; }
         text-transform: uppercase;
       }
       .details-link {
-          margin-top: -10px;
+          margin-top: 25px;
         text-align: center;
         font-family: 'Gotham-book';
         font-size: 15px;
@@ -255,16 +256,19 @@ margin-top : -10px !important; }
         flex-direction: row;
       }
       .gallery-page h3 {
-        font-size: 15px;
+        font-size: 1.3vh;
       }
       .gallery-page p {
         margin-top: 20px;
         text-align: left;
       }
       .info-wrapper {
-        padding-top: 100px;
+        padding-top: 30px;
         width: 70%;
         margin: auto;
+      }
+      .info-wrapper p h3 {
+        text-align: center;
       }
       .control-dots {
           display: none;
@@ -276,3 +280,16 @@ margin-top : -10px !important; }
       width: 45% !important;
     }
     
+    @media only screen and (max-width: 1450px) {
+      .carousel {
+        position: relative;
+        width: 840px !important;}
+        
+        .carousel img {
+          width: 840px;
+         
+    
+          display: inline-block;
+          pointer-events: none; }
+          
+      }

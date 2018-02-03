@@ -55,20 +55,10 @@ class PicCarousel extends Component {
                 }
             </ScrollTo>
             <div  id="info-anchor" className="info-wrapper">
+    
     <div className="flex-row">
-    <h3><strong>CINEMATOGRAPHY - </strong> </h3><h3>TAREK SHAYNE TABET</h3>
-    </div>
-    <div className="flex-row">
-    <h3><strong>DIRECTOR - </strong></h3><h3>TAREK SHAYNE TABET</h3>
-    </div>
-    <div className="flex-row">
-    <h3><strong>MUSIC - </strong></h3><h3>TAREK SHAYNE TABET</h3>
-    </div>
-    <div className="flex-row">
-    <h3><strong>EDITING - </strong></h3><h3>TAREK SHAYNE TABET</h3>
-    </div>
-    <div className="flex-row">
-    <p>description description description description descriptiondescription description description description descriptiondescription description description description descriptiondescription description description description descriptiondescription description description description descriptiondescription description description description description descriptiondescription description description description description description description description</p>
+    <p>This may sound like a cliché, but the Autumn season is a photographer’s blessing. For me it is not so much the beautiful. The series was entirely shot in Hampstead Heath Park in London. 
+</p>
     </div>
     </div>
     <Footer />

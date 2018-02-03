@@ -11,6 +11,7 @@ import Ashura from './components/galleries/Ashura'
 import Rhein from './components/galleries/Rhein'
 import Canary from './components/galleries/Canary'
 import Autumn from './components/galleries/Autumn'
+import Jaded from './components/galleries/Jaded'
 
 const App = () => (
   <BrowserRouter>
@@ -26,6 +27,7 @@ const App = () => (
   <Route path='/gallery/rhein' component={Rhein} />
   <Route path='/gallery/canary-wharf' component={Canary} />
   <Route path='/gallery/autumn' component={Autumn} />
+  <Route path='/gallery/jaded' component={Jaded} />
 
   </div>
   </BrowserRouter>

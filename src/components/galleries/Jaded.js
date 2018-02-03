@@ -11,13 +11,12 @@ class PicCarousel extends Component {
 
     state = { 
         photos:[
-        {src: "../img/gallery/ashura/ashura1.jpg", class:''},
-        {src: "../img/gallery/ashura/ashura2.jpg", class:''},
-        {src: "../img/gallery/ashura/ashura4.jpg", class:''},
-        {src: "../img/gallery/ashura/ashura5.jpg", class:''},
-        {src: "../img/gallery/ashura/ashura6.jpg", class:''},
-        {src: "../img/gallery/ashura/ashura3.jpg", class:'portrait'},
-        {src: "../img/gallery/ashura/ashura7.jpg", class:'portrait'}
+        {src: "../img/gallery/jaded/jaded1.jpg", class:''},
+        {src: "../img/gallery/jaded/jaded2.jpg", class:''},
+        {src: "../img/gallery/jaded/jaded3.jpg", class:''},
+        {src: "../img/gallery/jaded/jaded4.jpg", class:''},
+        {src: "../img/gallery/jaded/jaded5.jpg", class:''},
+    
      
         
         
@@ -28,9 +27,9 @@ class PicCarousel extends Component {
         return (
             <div className="gallery-page">
             <Header />
-            <h3 className="serie-name">Ashura</h3>
+            <h3 className="serie-name">Jaded</h3>
             
-            <Carousel className="dimension-cool" width='70%' dynamicHeight={true} useKeyboardArrows={true}>
+            <Carousel width='70%' dynamicHeight={true} useKeyboardArrows={true}>
             
                 {this.state.photos.map((photo) => {
                 return (<div>
@@ -53,7 +52,7 @@ class PicCarousel extends Component {
             <div  id="info-anchor" className="info-wrapper">
     
     <div className="flex-row">
-    <p>The days leading up to Ashura are filled with atmosphere. Iran is dressed in Black, mourning the death of their Imam. These images were captured in and around Yazd. It is beautiful to witness faith, faith of any kind. I was deeply touched by the intensity of ceremonies. Like any country rich in culture, Iran is filled with controversy – but decided to disregard the controversy and focus on the passion of the people around me. 
+    <p>Jaded is an urban blues. A blues told through images and not through sound. Stefanos Dimoulas is close collaborator of mine whom I have lensed many times. The series is very instinctive, where both model and camera reacted to the surroundings. The series was shot in Hackney, London.   
 </p>
     </div>
     </div>
