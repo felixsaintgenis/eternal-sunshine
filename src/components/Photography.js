@@ -22,9 +22,15 @@ class Photography extends Component {
             <div className="cinematography-page">
             <div className="full-homepage-background-photography">
         <Header />
-               
+        <Link to='/gallery/disconnected' >
+        <div className="cinematography-link">
+        <div className="col-md-12 mx-auto vertical-center about-text">     
+            <p className="text-center title">DISCONNECTED</p>
+            <p className="text-center paragraph">Tarek Shayne Tabet</p>
+            
+        </div>
         
-
+        </div></Link>
         </div>
         <div className="container photo-gallery">
 

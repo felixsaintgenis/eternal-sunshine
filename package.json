@@ -10,7 +10,8 @@
     "react-router-dom": "^4.2.2",
     "react-router-hash-link": "^1.1.1",
     "react-scripts": "1.0.17",
-    "react-scroll-to": "^1.1.0"
+    "react-scroll-to": "^1.1.0",
+    "react-slick": "^0.17.1"
   },
   "scripts": {
     "start": "react-scripts start",

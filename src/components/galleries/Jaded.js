@@ -16,6 +16,7 @@ class PicCarousel extends Component {
         {src: "../img/gallery/jaded/jaded3.jpg", class:''},
         {src: "../img/gallery/jaded/jaded4.jpg", class:''},
         {src: "../img/gallery/jaded/jaded5.jpg", class:''},
+        
     
      
         
@@ -28,6 +29,10 @@ class PicCarousel extends Component {
             <div className="gallery-page">
             <Header />
             <h3 className="serie-name">Jaded</h3>
+            <div className="previous-next-buttons">
+            <Link to='/gallery/canary-wharf'>Previous serie</Link>
+            <Link to='/gallery/disconnected'>Next serie</Link>
+            </div>
             
             <Carousel width='70%' dynamicHeight={true} useKeyboardArrows={true}>
             

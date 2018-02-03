@@ -16,3 +16,10 @@
     letter-spacing: 3px;
     line-height: 30px;
   }
+  .contact-text {
+    display: flex;
+    flex-direction: column;
+  }
+ .contact-margin {
+   margin-right: 30px;
+ }

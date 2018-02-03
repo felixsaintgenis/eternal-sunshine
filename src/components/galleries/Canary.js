@@ -33,8 +33,12 @@ class PicCarousel extends Component {
             <div className="gallery-page">
             <Header />
             <h3 className="serie-name">Canary Wharf</h3>
+            <div className="previous-next-buttons">
+            <Link to='/gallery/autumn'>Previous serie</Link>
+            <Link to='/gallery/jaded'>Next serie</Link>
+            </div>
             
-            <Carousel width='70%' dynamicHeight={true} useKeyboardArrows={true}>
+            <Carousel width='60%' dynamicHeight={true} useKeyboardArrows={true}>
             
                 {this.state.photos.map((photo) => {
                 return (<div>
