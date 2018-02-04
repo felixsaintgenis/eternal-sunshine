@@ -5,30 +5,63 @@ import { HashLink as Link } from 'react-router-hash-link';
 import { ScrollTo } from "react-scroll-to";
 import Header from '../Header-black'
 import Footer from '../Footer'
+import ImageGallery from 'react-image-gallery';
+import "react-image-gallery/styles/css/image-gallery.css";
 import "./Disconnected.css"
 
 class PicCarousel extends Component {
 
-    state = { 
-        photos:[
-        {src: "../img/gallery/autumn/autumn1.jpg", class:''},
-        {src: "../img/gallery/autumn/autumn2.jpg", class:''},
-        {src: "../img/gallery/autumn/autumn3.jpg", class:''},
-        {src: "../img/gallery/autumn/autumn4.jpg", class:''},
-        {src: "../img/gallery/autumn/autumn5.jpg", class:''},
-        {src: "../img/gallery/autumn/autumn6.jpg", class:'portrait'},
-        {src: "../img/gallery/autumn/autumn7.jpg", class:''},
-        {src: "../img/gallery/autumn/autumn8.jpg", class:'portrait'},
-        {src: "../img/gallery/autumn/autumn9.jpg", class:''},
-        {src: "../img/gallery/autumn/autumn10.jpg", class:''},
-        {src: "../img/gallery/autumn/autumn11.jpg", class:''}
-     
-        
-        
-      ]
-        }
-
     render() {
+        const images = [
+            {
+              original: '../../img/gallery/autumn/autumn1.jpg',
+              thumbnail: '../../img/gallery/autumn//thumbnail/autumn1.jpg',
+            },
+            {
+                original: '../../img/gallery/autumn/autumn2.jpg',
+                thumbnail: '../../img/gallery/autumn//thumbnail/autumn2.jpg',
+              },
+              {
+                original: '../../img/gallery/autumn/autumn3.jpg',
+                thumbnail: '../../img/gallery/autumn//thumbnail/autumn3.jpg',
+              },
+              {
+                original: '../../img/gallery/autumn/autumn4.jpg',
+                thumbnail: '../../img/gallery/autumn//thumbnail/autumn4.jpg',
+              },
+              {
+                original: '../../img/gallery/autumn/autumn5.jpg',
+                thumbnail: '../../img/gallery/autumn//thumbnail/autumn5.jpg',
+              },
+              {
+                original: '../../img/gallery/autumn/autumn6.jpg',
+                thumbnail: '../../img/gallery/autumn//thumbnail/autumn6.jpg',
+              },
+              {
+                original: '../../img/gallery/autumn/autumn7.jpg',
+                thumbnail: '../../img/gallery/autumn//thumbnail/autumn7.jpg',
+              },
+              {
+                original: '../../img/gallery/autumn/autumn8.jpg',
+                thumbnail: '../../img/gallery/autumn//thumbnail/autumn8.jpg',
+              },
+              {
+                original: '../../img/gallery/autumn/autumn9.jpg',
+                thumbnail: '../../img/gallery/autumn//thumbnail/autumn9.jpg',
+              },
+              {
+                original: '../../img/gallery/autumn/autumn10.jpg',
+                thumbnail: '../../img/gallery/autumn//thumbnail/autumn10.jpg',
+              },
+              {
+                original: '../../img/gallery/autumn/autumn11.jpg',
+                thumbnail: '../../img/gallery/autumn//thumbnail/autumn11.jpg',
+              },
+              {
+                original: '../../img/gallery/autumn/autumn12.jpg',
+                thumbnail: '../../img/gallery/autumn//thumbnail/autumn12.jpg',
+              },
+          ]
         return (
             <div className="gallery-page">
             <Header />
@@ -38,17 +71,7 @@ class PicCarousel extends Component {
             <Link to='/gallery/canary-wharf'>Next serie</Link>
             </div>
             
-            <Carousel width='60%' dynamicHeight={true} useKeyboardArrows={true}>
-            
-                {this.state.photos.map((photo) => {
-                return (<div>
-                    <img src={photo.src} className={photo.class} />
-                </div>)
-                })
-                }
-                
-               
-            </Carousel>
+            <ImageGallery items={images} />
             <ScrollTo>
                 {
                     (scroll) => (

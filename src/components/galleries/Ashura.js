@@ -1,30 +1,49 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Carousel } from 'react-responsive-carousel';
+import ImageGallery from 'react-image-gallery';
 import { HashLink as Link } from 'react-router-hash-link';
 import { ScrollTo } from "react-scroll-to";
 import Header from '../Header-black'
 import Footer from '../Footer'
 import "./Disconnected.css"
+import "react-image-gallery/styles/css/image-gallery.css";
+
 
 class PicCarousel extends Component {
 
-    state = { 
-        photos:[
-        {src: "../img/gallery/ashura/ashura1.jpg", class:''},
-        {src: "../img/gallery/ashura/ashura2.jpg", class:''},
-        {src: "../img/gallery/ashura/ashura4.jpg", class:''},
-        {src: "../img/gallery/ashura/ashura5.jpg", class:''},
-        {src: "../img/gallery/ashura/ashura6.jpg", class:''},
-        {src: "../img/gallery/ashura/ashura3.jpg", class:'portrait'},
-        {src: "../img/gallery/ashura/ashura7.jpg", class:'portrait'}
-     
-        
-        
-      ]
-        }
+    
 
     render() {
+        const images = [
+            {
+              original: '../../img/gallery/ashura/ashura1.jpg',
+              thumbnail: '../../img/gallery/ashura//thumbnail/ashura1.jpg',
+            },
+            {
+              original: '../img/gallery/ashura/ashura2.jpg',
+              thumbnail: '../../img/gallery/ashura//thumbnail/ashura2.jpg'
+            },
+            {
+              original: '../img/gallery/ashura/ashura3.jpg',
+              thumbnail: '../../img/gallery/ashura//thumbnail/ashura3.jpg'
+            },
+            {
+                original: '../img/gallery/ashura/ashura4.jpg',
+                thumbnail: '../../img/gallery/ashura//thumbnail/ashura4.jpg'
+              },
+              {
+                original: '../img/gallery/ashura/ashura5.jpg',
+                thumbnail: '../../img/gallery/ashura//thumbnail/ashura5.jpg'
+              },
+              {
+                original: '../img/gallery/ashura/ashura6.jpg',
+                thumbnail: '../../img/gallery/ashura//thumbnail/ashura6.jpg'
+              },
+              {
+                original: '../img/gallery/ashura/ashura7.jpg',
+                thumbnail: '../../img/gallery/ashura//thumbnail/ashura7.jpg'
+              }
+          ]
         return (
             <div className="gallery-page">
             <Header />
@@ -35,17 +54,7 @@ class PicCarousel extends Component {
             </div>
 
             
-            <Carousel width='60%' useKeyboardArrows={true}>
-            
-                {this.state.photos.map((photo) => {
-                return (<div>
-                    <img src={photo.src} className={photo.class} />
-                </div>)
-                })
-                }
-                
-               
-            </Carousel>
+            <ImageGallery items={images} />
             <ScrollTo>
                 {
                     (scroll) => (

@@ -5,30 +5,63 @@ import { HashLink as Link } from 'react-router-hash-link';
 import { ScrollTo } from "react-scroll-to";
 import Header from '../Header-black'
 import Footer from '../Footer'
+import ImageGallery from 'react-image-gallery';
+import "react-image-gallery/styles/css/image-gallery.css";
 import "./Disconnected.css"
 
 class PicCarousel extends Component {
 
-    state = { 
-        photos:[
-        {src: "../img/gallery/canary/canarywharf1.jpg", class:''},
-        {src: "../img/gallery/canary/canarywharf2.jpg", class:''},
-        {src: "../img/gallery/canary/canarywharf3.jpg", class:'portrait'},
-        {src: "../img/gallery/canary/canarywharf4.jpg", class:'portrait'},
-        {src: "../img/gallery/canary/canarywharf5.jpg", class:''},
-        {src: "../img/gallery/canary/canarywharf6.jpg", class:''},
-        {src: "../img/gallery/canary/canarywharf7.jpg", class:''},
-        {src: "../img/gallery/canary/canarywharf8.jpg", class:''},
-        {src: "../img/gallery/canary/canarywharf9.jpg", class:'portrait'},
-        {src: "../img/gallery/canary/canarywharf10.jpg", class:'portrait'},
-        {src: "../img/gallery/canary/canarywharf11.jpg", class:''},
-     
-        
-        
-      ]
-        }
+    
 
     render() {
+        const images = [
+            {
+              original: '../../img/gallery/canary/canarywharf1.jpg',
+              thumbnail: '../../img/gallery/canary//thumbnail/canary1.jpg',
+            },
+            {
+                original: '../../img/gallery/canary/canarywharf2.jpg',
+                thumbnail: '../../img/gallery/canary//thumbnail/canary2.jpg',
+              },
+              {
+                original: '../../img/gallery/canary/canarywharf3.jpg',
+                thumbnail: '../../img/gallery/canary//thumbnail/canary3.jpg',
+              },
+              {
+                original: '../../img/gallery/canary/canarywharf4.jpg',
+                thumbnail: '../../img/gallery/canary//thumbnail/canary4.jpg',
+              },
+              {
+                original: '../../img/gallery/canary/canarywharf5.jpg',
+                thumbnail: '../../img/gallery/canary//thumbnail/canary5.jpg',
+              },
+              {
+                original: '../../img/gallery/canary/canarywharf6.jpg',
+                thumbnail: '../../img/gallery/canary//thumbnail/canary6.jpg',
+              },
+              {
+                original: '../../img/gallery/canary/canarywharf7.jpg',
+                thumbnail: '../../img/gallery/canary//thumbnail/canary7.jpg',
+              },
+              {
+                original: '../../img/gallery/canary/canarywharf8.jpg',
+                thumbnail: '../../img/gallery/canary//thumbnail/canary8.jpg',
+              },
+              {
+                original: '../../img/gallery/canary/canarywharf9.jpg',
+                thumbnail: '../../img/gallery/canary//thumbnail/canary9.jpg',
+              },
+              {
+                original: '../../img/gallery/canary/canarywharf10.jpg',
+                thumbnail: '../../img/gallery/canary//thumbnail/canary10.jpg',
+              },
+              {
+                original: '../../img/gallery/canary/canarywharf11.jpg',
+                thumbnail: '../../img/gallery/canary//thumbnail/canary11.jpg',
+              },
+            
+            
+          ]
         return (
             <div className="gallery-page">
             <Header />
@@ -38,17 +71,7 @@ class PicCarousel extends Component {
             <Link to='/gallery/jaded'>Next serie</Link>
             </div>
             
-            <Carousel width='60%' dynamicHeight={true} useKeyboardArrows={true}>
-            
-                {this.state.photos.map((photo) => {
-                return (<div>
-                    <img src={photo.src} className={photo.class} />
-                </div>)
-                })
-                }
-                
-               
-            </Carousel>
+            <ImageGallery items={images} />
             <ScrollTo>
                 {
                     (scroll) => (

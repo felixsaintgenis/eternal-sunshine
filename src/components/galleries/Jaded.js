@@ -1,30 +1,39 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Carousel } from 'react-responsive-carousel';
 import { HashLink as Link } from 'react-router-hash-link';
 import { ScrollTo } from "react-scroll-to";
 import Header from '../Header-black'
 import Footer from '../Footer'
+import ImageGallery from 'react-image-gallery';
+import "react-image-gallery/styles/css/image-gallery.css";
 import "./Disconnected.css"
 
 class PicCarousel extends Component {
 
-    state = { 
-        photos:[
-        {src: "../img/gallery/jaded/jaded1.jpg", class:''},
-        {src: "../img/gallery/jaded/jaded2.jpg", class:''},
-        {src: "../img/gallery/jaded/jaded3.jpg", class:''},
-        {src: "../img/gallery/jaded/jaded4.jpg", class:''},
-        {src: "../img/gallery/jaded/jaded5.jpg", class:''},
-        
-    
-     
-        
-        
-      ]
-        }
-
     render() {
+        const images = [
+            {
+              original: '../../img/gallery/jaded/jaded1.jpg',
+              thumbnail: '../../img/gallery/jaded//thumbnail/jaded1.jpg',
+            },
+            {
+                original: '../../img/gallery/jaded/jaded2.jpg',
+                thumbnail: '../../img/gallery/jaded//thumbnail/jaded1.jpg',
+              },
+              {
+                original: '../../img/gallery/jaded/jaded3.jpg',
+                thumbnail: '../../img/gallery/jaded//thumbnail/jaded1.jpg',
+              },
+              {
+                original: '../../img/gallery/jaded/jaded4.jpg',
+                thumbnail: '../../img/gallery/jaded//thumbnail/jaded1.jpg',
+              },
+              {
+                original: '../../img/gallery/jaded/jaded5.jpg',
+                thumbnail: '../../img/gallery/jaded//thumbnail/jaded1.jpg',
+              },
+            
+          ]
         return (
             <div className="gallery-page">
             <Header />
@@ -34,17 +43,7 @@ class PicCarousel extends Component {
             <Link to='/gallery/disconnected'>Next serie</Link>
             </div>
             
-            <Carousel width='70%' dynamicHeight={true} useKeyboardArrows={true}>
-            
-                {this.state.photos.map((photo) => {
-                return (<div>
-                    <img src={photo.src} className={photo.class} />
-                </div>)
-                })
-                }
-                
-               
-            </Carousel>
+            <ImageGallery items={images} />
             <ScrollTo>
                 {
                     (scroll) => (

@@ -1,31 +1,56 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Carousel } from 'react-responsive-carousel';
 import { HashLink as Link } from 'react-router-hash-link';
 import { ScrollTo } from "react-scroll-to";
 import Header from '../Header-black'
 import Footer from '../Footer'
+import ImageGallery from 'react-image-gallery';
+import "react-image-gallery/styles/css/image-gallery.css";
 import "./Disconnected.css"
+
+
 class PicCarousel extends Component {
 
-    state = { 
-        photos:[
-        {src: "../img/gallery/rhein/rhein1.jpg", class:'portrait'},
-        {src: "../img/gallery/rhein/rhein2.jpg", class:'portrait'},
-        {src: "../img/gallery/rhein/rhein3.jpg", class:''},
-        {src: "../img/gallery/rhein/rhein4.jpg", class:'portrait'},
-        {src: "../img/gallery/rhein/rhein5.jpg", class:''},
-        {src: "../img/gallery/rhein/rhein6.jpg", class:''},
-        {src: "../img/gallery/rhein/rhein7.jpg", class:''},
-        {src: "../img/gallery/rhein/rhein8.jpg", class:''},
-        {src: "../img/gallery/rhein/rhein9.jpg", class:''}
-     
-        
-        
-      ]
-        }
-
     render() {
+        const images = [
+            {
+              original: '../../img/gallery/rhein/rhein1.jpg',
+              thumbnail: '../../img/gallery/rhein//thumbnail/rhein1.jpg',
+            },
+            {
+                original: '../../img/gallery/rhein/rhein2.jpg',
+                thumbnail: '../../img/gallery/rhein//thumbnail/rhein2.jpg',
+              },
+              {
+                original: '../../img/gallery/rhein/rhein3.jpg',
+                thumbnail: '../../img/gallery/rhein//thumbnail/rhein3.jpg',
+              },
+              {
+                original: '../../img/gallery/rhein/rhein4.jpg',
+                thumbnail: '../../img/gallery/rhein//thumbnail/rhein4.jpg',
+              },
+              {
+                original: '../../img/gallery/rhein/rhein5.jpg',
+                thumbnail: '../../img/gallery/rhein//thumbnail/rhein5.jpg',
+              },
+              {
+                original: '../../img/gallery/rhein/rhein6.jpg',
+                thumbnail: '../../img/gallery/rhein//thumbnail/rhein6.jpg',
+              },
+              {
+                original: '../../img/gallery/rhein/rhein7.jpg',
+                thumbnail: '../../img/gallery/rhein//thumbnail/rhein7.jpg',
+              },
+              {
+                original: '../../img/gallery/rhein/rhein8.jpg',
+                thumbnail: '../../img/gallery/rhein//thumbnail/rhein8.jpg',
+              },
+              {
+                original: '../../img/gallery/rhein/rhein9.jpg',
+                thumbnail: '../../img/gallery/rhein//thumbnail/rhein9.jpg',
+              },
+            
+          ]
         return (
             <div className="gallery-page">
             <Header />
@@ -35,17 +60,7 @@ class PicCarousel extends Component {
             <Link to='/gallery/autumn'>Next serie</Link>
             </div>
             
-            <Carousel width='60%' useKeyboardArrows={true}>
-            
-                {this.state.photos.map((photo) => {
-                return (<div>
-                    <img src={photo.src} className={photo.class} />
-                </div>)
-                })
-                }
-                
-               
-            </Carousel>
+            <ImageGallery items={images} />
             <ScrollTo>
                 {
                     (scroll) => (

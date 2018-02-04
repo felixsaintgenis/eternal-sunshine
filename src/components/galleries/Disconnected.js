@@ -5,35 +5,89 @@ import { HashLink as Link } from 'react-router-hash-link';
 import { ScrollTo } from "react-scroll-to";
 import Header from '../Header-black'
 import Footer from '../Footer'
+import ImageGallery from 'react-image-gallery';
+import "react-image-gallery/styles/css/image-gallery.css";
 import "./Disconnected.css"
 
 class PicCarousel extends Component {
 
-    state = { 
-        photos:[
-        {src: "../img/gallery/disconnected/disconnected1.jpg"},
-        {src: "../img/gallery/disconnected/disconnected2.jpg"},
-        {src: "../img/gallery/disconnected/disconnected3.jpg"},
-        {src: "../img/gallery/disconnected/disconnected4.jpg"},
-        {src: "../img/gallery/disconnected/disconnected5.jpg"},
-        {src: "../img/gallery/disconnected/disconnected6.jpg"},
-        {src: "../img/gallery/disconnected/disconnected7.jpg"},
-        {src: "../img/gallery/disconnected/disconnected8.jpg"},
-        {src: "../img/gallery/disconnected/disconnected9.jpg"},
-        {src: "../img/gallery/disconnected/disconnected10.jpg"},
-        {src: "../img/gallery/disconnected/disconnected11.jpg"},
-        {src: "../img/gallery/disconnected/disconnected12.jpg"},
-        {src: "../img/gallery/disconnected/disconnected13.jpg"},
-        {src: "../img/gallery/disconnected/disconnected14.jpg"},
-        {src: "../img/gallery/disconnected/disconnected15.jpg"},
-        {src: "../img/gallery/disconnected/disconnected16.jpg"},
-        {src: "../img/gallery/disconnected/disconnected17.jpg"},
-        {src: "../img/gallery/disconnected/disconnected18.jpg"}
-        
-      ]
-        }
+    
 
     render() {
+        const images = [
+            {
+              original: '../../img/gallery/disconnected/disconnected1.jpg',
+              thumbnail: '../../img/gallery/disconnected//thumbnail/disconnected1.jpg',
+            },
+            {
+                original: '../../img/gallery/disconnected/disconnected2.jpg',
+                thumbnail: '../../img/gallery/disconnected//thumbnail/disconnected2.jpg',
+              },
+              {
+                original: '../../img/gallery/disconnected/disconnected3.jpg',
+                thumbnail: '../../img/gallery/disconnected//thumbnail/disconnected3.jpg',
+              },
+              {
+                original: '../../img/gallery/disconnected/disconnected4.jpg',
+                thumbnail: '../../img/gallery/disconnected//thumbnail/disconnected4.jpg',
+              },
+              {
+                original: '../../img/gallery/disconnected/disconnected5.jpg',
+                thumbnail: '../../img/gallery/disconnected//thumbnail/disconnected5.jpg',
+              },
+              {
+                original: '../../img/gallery/disconnected/disconnected6.jpg',
+                thumbnail: '../../img/gallery/disconnected//thumbnail/disconnected6.jpg',
+              },
+              {
+                original: '../../img/gallery/disconnected/disconnected7.jpg',
+                thumbnail: '../../img/gallery/disconnected//thumbnail/disconnected7.jpg',
+              },
+              {
+                original: '../../img/gallery/disconnected/disconnected8.jpg',
+                thumbnail: '../../img/gallery/disconnected//thumbnail/disconnected8.jpg',
+              },
+              {
+                original: '../../img/gallery/disconnected/disconnected9.jpg',
+                thumbnail: '../../img/gallery/disconnected//thumbnail/disconnected9.jpg',
+              },
+              {
+                original: '../../img/gallery/disconnected/disconnected10.jpg',
+                thumbnail: '../../img/gallery/disconnected//thumbnail/disconnected10.jpg',
+              },
+              {
+                original: '../../img/gallery/disconnected/disconnected11.jpg',
+                thumbnail: '../../img/gallery/disconnected//thumbnail/disconnected11.jpg',
+              },
+              {
+                original: '../../img/gallery/disconnected/disconnected12.jpg',
+                thumbnail: '../../img/gallery/disconnected//thumbnail/disconnected12.jpg',
+              },
+              {
+                original: '../../img/gallery/disconnected/disconnected13.jpg',
+                thumbnail: '../../img/gallery/disconnected//thumbnail/disconnected13.jpg',
+              },
+              {
+                original: '../../img/gallery/disconnected/disconnected14.jpg',
+                thumbnail: '../../img/gallery/disconnected//thumbnail/disconnected14.jpg',
+              },
+              {
+                original: '../../img/gallery/disconnected/disconnected15.jpg',
+                thumbnail: '../../img/gallery/disconnected//thumbnail/disconnected15.jpg',
+              },
+              {
+                original: '../../img/gallery/disconnected/disconnected16.jpg',
+                thumbnail: '../../img/gallery/disconnected//thumbnail/disconnected16.jpg',
+              },
+              {
+                original: '../../img/gallery/disconnected/disconnected17.jpg',
+                thumbnail: '../../img/gallery/disconnected//thumbnail/disconnected17.jpg',
+              },
+              {
+                original: '../../img/gallery/disconnected/disconnected18.jpg',
+                thumbnail: '../../img/gallery/disconnected//thumbnail/disconnected18.jpg',
+              },
+          ]
         return (
             <div className="gallery-page">
             <Header />
@@ -43,17 +97,7 @@ class PicCarousel extends Component {
             <Link to='/gallery/ashura'>Next serie</Link>
             </div>
             
-            <Carousel width='70%' useKeyboardArrows={true}>
-            
-                {this.state.photos.map((photo) => {
-                return (<div>
-                    <img src={photo.src} />
-                </div>)
-                })
-                }
-                
-               
-            </Carousel>
+            <ImageGallery items={images} />
             <ScrollTo>
                 {
                     (scroll) => (
