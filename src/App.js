@@ -12,7 +12,7 @@ import Rhein from './components/galleries/Rhein'
 import Canary from './components/galleries/Canary'
 import Autumn from './components/galleries/Autumn'
 import Jaded from './components/galleries/Jaded'
-import Test from './react-slick/examples/CustomPaging'
+
 
 const App = () => (
   <BrowserRouter>
@@ -29,7 +29,7 @@ const App = () => (
   <Route path='/gallery/canary-wharf' component={Canary} />
   <Route path='/gallery/autumn' component={Autumn} />
   <Route path='/gallery/jaded' component={Jaded} />
-  <Route path='/gallery/test' component={Test} />
+
 
 
 
